@@ -1,11 +1,9 @@
 package br.com.alura.aluraflix.repository;
 
-import br.com.alura.aluraflix.orm.Videos;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.NoRepositoryBean;
+import br.com.alura.aluraflix.entity.Videos;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-//@NoRepositoryBean
-public interface VideoRepository extends CrudRepository<Videos, Integer> {
+public interface VideoRepository extends JpaRepository<Videos, Integer> {
 }

@@ -1,4 +1,4 @@
-package br.com.alura.aluraflix.orm;
+package br.com.alura.aluraflix.entity;
 
 import javax.persistence.*;
 
