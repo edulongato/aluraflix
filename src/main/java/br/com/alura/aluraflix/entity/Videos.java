@@ -1,8 +1,13 @@
 package br.com.alura.aluraflix.entity;
 
+import lombok.Data;
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 
 @Entity
+@Component
+
 @Table(name = "videos")
 public class Videos {
 
@@ -11,9 +16,11 @@ public class Videos {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+
     private String titulo;
     private String descricao;
     private String url;
+
 
     public Integer getId() {
         return id;
